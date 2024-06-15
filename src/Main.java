@@ -74,12 +74,15 @@ public class Main
                 } while (trash.equals("N"));
             } while (PPG < 0);
 
+            //Distance calculator
             distance = tank * MPG;
             System.out.println("The car can go " + distance + " miles with the gas left in the tank.");
 
+            //Cost calculator
             cost = 100 / MPG * PPG;
             System.out.printf("The cost to travel 100 miles is: %10.2f dollars", cost);
 
+            //To test different stats
             System.out.println("\nType Y to go again.");
             playAgain = in.nextLine();
         }while (playAgain.equalsIgnoreCase("Y"));
